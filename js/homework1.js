@@ -13,7 +13,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 var geometry = new THREE.SphereGeometry(5,5,5);
-var material = new THREE.MeshBasicMaterial({color: 0x00ff00, wireframe: true});
+var material = new THREE.MeshNormalMaterial({wireframe: false});
 var sphere = new THREE.Mesh(geometry, material);
 scene.add(sphere);
 
